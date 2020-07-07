@@ -1129,3 +1129,13 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 #copyright p a:hover {
   color: #00b4d9;
 }
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
