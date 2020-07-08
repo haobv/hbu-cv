@@ -1189,34 +1189,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     transform: translate3d(0, 0, 0);
   }
 }
-.glitch .glitch__title {
-  font-family: 'Bungee', cursive;
-  font-size: 100px;
-  color: #ffffff;
-  position: relative;
-  text-transform: uppercase;
-}
-.glitch .glitch__title:before, .glitch .glitch__title:after {
-  content: 'GLITCH';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.glitch .glitch__title:before {
-  left: 2px;
-  text-shadow: -1px 0 #00ffea;
-  clip: rect(24px, 550px, 90px, 0);
-  animation: glitch-anim 2s linear infinite alternate-reverse;
-}
-.glitch .glitch__title:after {
-  left: -2px;
-  text-shadow: -1px 0 #fe3a7f;
-  clip: rect(85px, 550px, 140px, 0);
-  animation: glitch-anim 2s 1s linear infinite alternate-reverse;
-}
 @keyframes glitch-anim {
   0% {
     clip: rect(88px, 9999px, 74px, 0);
@@ -1509,5 +1481,62 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   --blend-color-2: transparent;
   --blend-color-3: transparent;
   --blend-color-4: transparent;
-  --blend-color-5: #af4949;
+  --blend-color-5: transparent;
+}
+
+/* ==========================================================================
+  Service hover effect
+   ========================================================================== */
+
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
+
+/* ==========================================================================
+  Card hover effect
+   ========================================================================== */
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.icon {
+  transition: all 0.8s ease;
+}
+.card .text {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover .text {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+.card .title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.card:hover .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon i {
+  background: linear-gradient(90deg, #FF7E7E, #FF4848);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
