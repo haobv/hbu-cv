@@ -1,7 +1,7 @@
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   #hero-area .contents .head-title {
-    font-size: 40px;
+    font-size: 60px;
   }
   .services-item .services-content h3 a {
     font-size: 14px;
@@ -55,7 +55,7 @@
     padding: 100px 0px 60px 0px;
   }
   #hero-area .contents .head-title {
-    font-size: 22px;
+    font-size: 40px;
   }
   #hero-area .contents h5 {
     font-size: 32px;

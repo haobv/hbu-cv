@@ -719,6 +719,14 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
 }
 
+#hero-area .container{
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 #hero-area .overlay {
   position: absolute;
   width: 100%;
