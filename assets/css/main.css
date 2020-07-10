@@ -719,14 +719,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
 }
 
-#hero-area .container{
-  height: 100vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
 #hero-area .overlay {
   position: absolute;
   width: 100%;
@@ -1547,4 +1539,24 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -webkit-text-fill-color: transparent;
   opacity: 1;
   transition: all 0.3s ease;
+}
+.interests-desc:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+  transition: all 0.2s ease;
+}
+
+.interests-desc:hover svg {
+  color: #e54b4b;
+  transition: all 0.1s ease;
+}
+.interests-desc .hobbies:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 55px;
+  background: #e9ecef;
+  z-index: 1;
 }
